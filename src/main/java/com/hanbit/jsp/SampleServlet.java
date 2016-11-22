@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 public class SampleServlet extends HttpServlet{
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-		resp.getOutputStream().println("Sample: "+req.getMethod());
+		resp.getOutputStream().println("Sample : "+req.getMethod());
 		resp.flushBuffer();
 	}
 }
