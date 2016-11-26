@@ -23,7 +23,7 @@ public class WelcomeServlet extends HttpServlet{
 	*/
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-		resp.getOutputStream().println("Welcome: "+req.getMethod());
+		resp.getOutputStream().println("Welcome : "+req.getMethod());
 		resp.flushBuffer();
 	}
 }
