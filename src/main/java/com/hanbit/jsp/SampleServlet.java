@@ -7,10 +7,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class SampleServlet extends HttpServlet{
-	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+public class SampleServlet extends HttpServlet {
 
-		resp.getOutputStream().println("Sample : "+req.getMethod());
+	@Override
+	protected void service(HttpServletRequest req, 
+			HttpServletResponse resp) throws ServletException, IOException {
+		
+		resp.getOutputStream().println("Sample");
 		resp.flushBuffer();
 	}
+	
 }
